@@ -7,6 +7,7 @@ Total friends: {{model.length}}
   {{#each model as |friend|}}
     <li>
       {{link-to friend.fullName "friends.show" friend}}
+       | <a href="#" {{action "delete" friend}}>Delete</a>
     </li>
   {{/each}}
 </ul>

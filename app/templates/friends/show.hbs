@@ -3,4 +3,6 @@ Email: <a href="mailto:{{model.email}}">{{model.email}}</a>
 Twitter: <a href="https://twitter.com/{{model.twitter}}" target="_blank">@{{model.twitter}}</a>
 
 <br><br>
-{{link-to 'Edit' "friends.edit" model}}
+{{link-to 'Edit' "friends.edit" friend}}
+<br>
+<a href="#" {{action "delete" friend}}>Delete</a>
