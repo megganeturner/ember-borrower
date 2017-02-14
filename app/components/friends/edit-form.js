@@ -18,6 +18,7 @@ export default Ember.Component.extend({
   actions: {
     save() {
       console.log('+- save action in edit-form component');
+
       if (this.get('isValid')) {
         this.get('model').save().then((friend) => {
           return this.save(friend);
@@ -28,6 +29,7 @@ export default Ember.Component.extend({
         this.set('errorMessage', 'You have to fill all the fields');
       }
     },
+    
     cancel() {
       console.log('+- cancel action in edit form component');
       this.cancel();
