@@ -1,3 +1,6 @@
 <h3>{{model.firstName}}  {{model.lastName}}</h3>
 Email: <a href="mailto:{{model.email}}">{{model.email}}</a>
 Twitter: <a href="https://twitter.com/{{model.twitter}}" target="_blank">@{{model.twitter}}</a>
+
+<br><br>
+{{link-to 'Edit' "friends.edit" model}}
