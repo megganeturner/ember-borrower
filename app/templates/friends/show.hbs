@@ -1,10 +1,9 @@
 <div class="col-8 px2 mx-auto p1 h2 center">
-  <h3>{{model.firstName}}  {{model.lastName}}</h3>
-  Email: <a href="mailto:{{model.email}}">{{model.email}}</a><br>
-  Twitter: <a href="https://twitter.com/{{model.twitter}}" target="_blank">@{{model.twitter}}</a>
+  <p class="">{{model.firstName}}</p>
+  <p class="">{{model.lastName}}</p>
+  <p class="">Email: <a href="mailto:{{model.email}}">{{model.email}}</a></p>
+  <p class="">Twitter: <a href="https://twitter.com/{{model.twitter}}" target="_blank">@{{model.twitter}}</a></p>
 
-  <br><br>
-  {{link-to 'Edit' "friends.edit" model}}
-  <br>
-  <a href="#" {{action "delete" model}}>Delete</a>
+  <p class="">{{link-to 'Edit' "friends.edit" model}}</p>
+  <p class=""><a href="#" {{action "delete" model}}>Delete</a></p>
 </div>
