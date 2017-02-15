@@ -1,1 +1,7 @@
-{{outlet}}
+<h3>Edit article for {{model.name}}</h3>
+
+{{articles/edit-form
+  model=model
+  save=(action save)
+  cancel=(action cancel)
+}}
