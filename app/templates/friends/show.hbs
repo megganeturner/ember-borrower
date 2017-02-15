@@ -1,4 +1,5 @@
 <div class="col-8 px2 mx-auto p1 h2 center">
+  <img src="http://www.fillmurray.com/180/180" alt="Bill Murray">
   <p class="">{{model.firstName}}</p>
   <p class="">{{model.lastName}}</p>
   <p class="">Email: <a href="mailto:{{model.email}}">{{model.email}}</a></p>
@@ -6,4 +7,8 @@
 
   <p class="">{{link-to 'Edit' "friends.edit" model}}</p>
   <p class=""><a href="#" {{action "delete" model}}>Delete</a></p>
+
+  <div class="flex-auto ml1 loans-container">
+    {{outlet}}
+  </div>
 </div>
